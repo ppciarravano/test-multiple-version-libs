@@ -1,3 +1,10 @@
+### test-multiple-version-libs
+
+```
+maya --> usd --> oiio --> libtif4
+ |
+ |--> libtif3
+
 // libtiff_3
 gcc -Wall -fPIC -c libtiff.c 
 gcc -shared -Wl,-soname,libtiff.so.3 -o libtiff.so.3.0 libtiff.o
@@ -53,9 +60,13 @@ usd_function
 oiio_function
 libtiff 4: open_funclibtiff 4: close_funcend maya main
 ----
+```
 
-// links:
+#### links:
+
 http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
+
 https://www.gnu.org/software/gnulib/manual/html_node/LD-Version-Scripts.html
+
 https://www.akkadia.org/drepper/dsohowto.pdf
 
