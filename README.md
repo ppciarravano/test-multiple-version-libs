@@ -1,6 +1,10 @@
 ### test-multiple-version-libs
 
 ```
+maya --> usd --> oiio --> libtif4
+ |
+ |--> libtif3
+
 // libtiff_3
 gcc -Wall -fPIC -c libtiff.c 
 gcc -shared -Wl,-soname,libtiff.so.3 -o libtiff.so.3.0 libtiff.o
