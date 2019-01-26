@@ -1,7 +1,8 @@
 ### test-multiple-version-libs
 
 ```
-maya --> usd --> oiio --> libtif4
+         dlopen/dlsym
+maya ------------------->> usd --> oiio --> libtif4
  |
  |--> libtif3
 
@@ -36,8 +37,10 @@ ln -sf libusd.so.1.0 libusd.so.1
 ln -sf libusd.so.1 libusd.so
 
 // maya
-g++ -Wall -I../libtiff_3 -I../usd  -c maya.cpp
-g++ maya.o -o maya ../libtiff_3/libtiff.so ../usd/libusd.so ../oiio/liboiio.so ../libtiff_4/libtiff.so
+#g++ -Wall -I../libtiff_3 -I../usd  -c maya.cpp
+#g++ maya.o -o maya ../libtiff_3/libtiff.so ../usd/libusd.so ../oiio/liboiio.so ../libtiff_4/libtiff.so
+g++ -Wall -I../libtiff_3  -c maya.cpp
+g++ maya.o -o maya -ldl ../libtiff_3/libtiff.so
 export LD_LIBRARY_PATH=../libtiff_4:../libtiff_3:../usd:../oiio
 ----
 ./maya 
@@ -69,4 +72,10 @@ http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
 https://www.gnu.org/software/gnulib/manual/html_node/LD-Version-Scripts.html
 
 https://www.akkadia.org/drepper/dsohowto.pdf
+
+https://www.tldp.org/HOWTO/html_single/C++-dlopen/
+
+http://tldp.org/HOWTO/Program-Library-HOWTO/dl-libraries.html
+
+https://amir.rachum.com/blog/2016/09/17/shared-libraries/
 
