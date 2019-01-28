@@ -28,6 +28,8 @@ https://blog.habets.se/2012/05/Shared-libraries-diamond-problem.html
 
 https://github.com/ThomasHabets/diamond_linking_example
 
+https://linux.die.net/man/1/ld
+
 https://www.tldp.org/HOWTO/html_single/C++-dlopen/
 
 http://tldp.org/HOWTO/Program-Library-HOWTO/dl-libraries.html
@@ -35,12 +37,3 @@ http://tldp.org/HOWTO/Program-Library-HOWTO/dl-libraries.html
 https://amir.rachum.com/blog/2016/09/17/shared-libraries/
 
 http://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_node/ld_3.html
-
-
-
-
-
-
-
-
-
