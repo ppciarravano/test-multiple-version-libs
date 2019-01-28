@@ -1,6 +1,8 @@
 ### test-multiple-version-libs
 
 ```
+How To build:
+
          dlopen/dlsym
 maya ------------------->> usd --> oiio --> libtif4
  |
