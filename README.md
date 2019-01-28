@@ -32,7 +32,7 @@ http://tldp.org/HOWTO/Program-Library-HOWTO/dl-libraries.html
 
 https://amir.rachum.com/blog/2016/09/17/shared-libraries/
 
-ftp://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_node/ld_3.html
+http://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_node/ld_3.html
 
 
 

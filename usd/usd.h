@@ -1,6 +1,6 @@
 #ifndef USD_H
 #define USD_H
 
-int usd_function(int);
+extern "C" int usd_function(int);
 
 #endif
