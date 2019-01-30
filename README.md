@@ -4,9 +4,9 @@
 How To build:
 
          dlopen/dlsym
-maya ------------------->> usd --> oiio --> libtif4
+maya ------------------->> usd --> oiio --> libtiff4
  |
- |--> libtif3
+ |--> libtiff3
 
 
 ./build.sh
