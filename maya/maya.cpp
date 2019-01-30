@@ -21,7 +21,7 @@ int main()
     void *handle;
     int (*usd_function)(int);
     char *error;
-    handle = dlopen ("../usd/libusd.so", RTLD_LAZY);
+    handle = dlopen ("./usd/libusd.so", RTLD_LAZY);
     if (!handle) {
         fputs (dlerror(), stderr);
         exit(1);
